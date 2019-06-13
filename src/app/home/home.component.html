@@ -1,0 +1,16 @@
+<h1>Steam - Big Data</h1>
+<div style="margin-top: 100px" *ngIf="!visibleHome || !loaderShow">
+  <div id="explous_loader" style="margin-left: calc(50% - 160px);"></div>
+</div>
+<div *ngIf="visibleHome">
+  <br>
+  <div class="responsive-map">
+    <div id="container" class="class-map"></div>
+  </div>
+  <p [hidden]="!loaderShow" class="info-map">Usuarios por pais</p>
+  <br>
+  <br>
+  <br>
+  <h2 [hidden]="!loaderShow">Tabla De Registros</h2>
+  <div id="explous_table" style="color:white"></div>
+</div>

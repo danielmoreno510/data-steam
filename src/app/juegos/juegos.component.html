@@ -1,0 +1,42 @@
+<h1>Juegos</h1>
+<p>Top de los juegos</p>
+<div>
+  <div *ngIf="visibleHome">
+    <div style="display: block;" class="graficas">
+      <canvas baseChart
+        [datasets]="barChartData"
+        [labels]="barChartLabels"
+        [options]="barChartOptions"
+        [legend]="barChartLegend"
+        [chartType]="barChartType">
+      </canvas>
+    </div>
+    <div style="display: block;" class="graficas">
+      <canvas baseChart
+        [datasets]="barChartData1"
+        [labels]="barChartLabels"
+        [options]="barChartOptions"
+        [legend]="barChartLegend"
+        [chartType]="barChartType1"
+        [colors]="pieChartColors">
+      </canvas>
+    </div>
+    <p class="info-map">Total: {{total}}</p>
+    <br>
+    <br>
+    <canvas baseChart
+      [datasets]="barChartData2"
+      [labels]="barChartLabels1"
+      [options]="barChartOptions"
+      [legend]="barChartLegend"
+      [chartType]="barChartType">
+    </canvas>
+    <br>
+    <br>
+    <h2>Tabla De Juegos</h2>
+    <div id="explous_table" style="color:white"></div>
+  </div>
+  <div style="margin-top: 140px" *ngIf="!visibleHome">
+    <div id="explous_loader" style="margin-left: calc(50% - 160px);"></div>
+  </div>
+</div>

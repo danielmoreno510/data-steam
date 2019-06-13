@@ -1,0 +1,38 @@
+.responsive-map{
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.class-map{
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    margin-left: calc(50% - 500px)
+}
+
+@media screen and (max-width: 1000px){
+    .class-map{
+        position: relative;
+        width: 700px;
+        height: 440px;
+        margin-left: calc(50% - 350px)
+    }
+}
+
+@media screen and (max-width: 768px){
+    .class-map{
+        position: relative;
+        width: 500px;
+        height: 300px;
+        margin-left: calc(50% - 250px)
+    }
+}
+
+@media screen and (max-width: 600px){
+    .class-map{
+        position: relative;
+        width: 400px;
+        height: 250px;
+        margin-left: calc(50% - 200px)
+    }
+}

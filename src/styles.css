@@ -1,1 +1,215 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+    color: #96aed4
+}
+
+h1{
+    font-size: 3.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    color: #aebed8;
+}
+
+h2{
+    font-weight:400;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #aebed8;
+}
+
+h3{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.0rem;
+    font-weight:400;
+    color: #aebed8;
+}
+
+h4{
+    font-weight:300;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h5{
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.header{
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #0d47a1;
+    z-index: 100000;
+}
+
+.header-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.87rem 1.4rem;
+}
+
+.header-content-responsive{
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.87rem 1.4rem;
+}
+
+.link{
+    color:white;
+    text-decoration: none;
+    padding: 0 1.4rem;
+    line-height: 2.1rem;
+    margin-top: -0.2rem;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.link:hover{
+    opacity: 1;
+}
+
+.links-responsive{
+    flex: 1;
+    text-align: center;
+}
+
+.logo{
+    width: 35px;
+    vertical-align: text-top;
+    margin-right: 1rem;
+    margin-top: -9px;
+}
+
+.icono2{
+    width: 2rem;
+    vertical-align: text-top;
+    margin-left: 1rem;
+    margin-top: -6px;
+}
+
+.explous{
+    vertical-align: baseline;
+}
+
+.space{
+    flex-grow: 1;
+}
+
+.container{
+    background: #1b1f23;
+    padding: 0.87rem 2.6rem;
+    min-height: calc(100vh - 57px);
+    margin-top: 57px;
+}
+
+#explous_carousel{
+    height: 200px !important;
+}
+
+.carousel_points{
+    margin-top: 160px !important;
+    margin-left: calc(50% - 90px) !important
+}
+
+#explous_table tr:nth-child(odd){
+    background-color: #282c33 !important;
+}
+
+#explous_table{
+    color:white !important
+}
+
+#head_table tr:nth-child(odd){
+    background: rgb(21, 101, 192) !important
+}
+
+#explous_table_Usuario{
+    color:white !important
+}
+
+#explous_table_Pais{
+    color:white !important
+}
+
+#explous_table_Juego{
+    color:white !important
+}
+
+.info-map{
+    margin-top: 0px;
+    text-align: right;
+}
+
+#pages_table{
+    color:#aebed8 !important
+}
+
+#results_table{
+    color:#aebed8 !important
+}
+
+#total_table{
+    color:#aebed8 !important
+}
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 2.4rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.8rem;   
+    }
+
+    h4{
+        font-size: 1.2rem
+    }
+    .container{
+        background: #1b1f23;
+        padding: 2.87rem 1.4rem;
+    }
+    .header-content-responsive{
+        display: flex;
+        padding: 0.87rem 0.4rem;
+        padding-top: 0.4rem;
+    }
+    .header-content{
+        padding: 0.87rem 0.4rem;
+        padding-bottom: 0.4rem;
+    }
+    .responsive-none{
+        display: none
+    }
+    .link{
+        padding: 0 0.6rem;
+    }
+}

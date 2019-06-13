@@ -1,0 +1,23 @@
+<h1>Usuarios</h1>
+<p>Ultimo ingreso de jugadores por año</p>
+<div>
+  <div style="margin-top: 100px" *ngIf="!visibleHome || !loaderShow">
+    <div id="explous_loader" style="margin-left: calc(50% - 160px);"></div>
+  </div>
+  <div *ngIf="visibleHome" [hidden]="!loaderShow">
+    <div style="display: block">
+      <canvas baseChart
+        [datasets]="barChartData"
+        [labels]="barChartLabels"
+        [options]="barChartOptions"
+        [legend]="barChartLegend"
+        [chartType]="barChartType">
+      </canvas>
+    </div>
+    <p class="info-map">Total: {{total}}</p>
+    <br>
+    <br>
+    <h2>Tabla De Usuarios</h2>
+    <div id="explous_table" style="color:white"></div>
+  </div>
+</div>

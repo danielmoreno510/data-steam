@@ -1,0 +1,11 @@
+.graficas{
+    width:50%;
+    float: left;
+}
+
+@media screen and (max-width: 1000px){
+    .graficas{
+        width:100%;
+        float: initial;
+    }
+}
